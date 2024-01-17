@@ -1,150 +1,150 @@
 .first-sec {
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
-    padding: 10rem 0;
-    margin-block-end: '10px'
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+  margin-block-end: "10px";
 }
-.work-container h3{
-    text-align: center;
-    font-size: 2.3rem;
-    width: 50%;
-    color: #0e2337;
+.work-container h3 {
+  text-align: center;
+  font-size: 2.3rem;
+  width: 50%;
+  color: #0e2337;
 }
 .swip-contain {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* max-width: 900px; */
-    max-width: 40%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 900px; */
+  max-width: 40%;
 }
-.vid-Logos-Div{
-    display:flex;
-    flex-direction:column;
-    margin:20px;
-    align-items:center
+.vid-Logos-Div {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
 }
-.video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .swiper-slide {
-    /* border-left: 3px solid #0e2337; 
+  /* border-left: 3px solid #0e2337; 
     border-right: 3px solid #0e2337;
     border-radius: 10px;
     border-block-end: 3px solid #252525;
     border-block-start: 3px solid #252525; */
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 1045px) {
+  .swip-contain {
+    text-align: center;
+    max-width: 100%;
+  }
+  .first-sec {
+    flex-direction: column;
+  }
+  .first-sec h3 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
     height: 300px;
-}
-
-@media screen and (max-width: 1045px) {
-    .swip-contain {
-        text-align: center;
-        max-width: 100%;
-    }
-    .first-sec {
-        flex-direction: column;
-    }
-    .first-sec h3 {
-        font-size: 2rem;
-        width: 100%;
-    }
-
-    .swiper {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 300px;
-    }
-    .prev, .next {
-        display: none;
-    }
+  }
+  .prev,
+  .next {
+    display: none;
+  }
 }
 
 .prev,
 .next {
-    position: absolute;
-    bottom: 0%;
-    width: auto;
-    padding: 7px;
-    color: transparent;
-    font-weight: bold;
-    font-size: 15px;
-    transition: 0.6s ease;
-    cursor: pointer;
-    user-select: none;
-    z-index: 99;
-    padding-bottom: 10px;
+  position: absolute;
+  bottom: 0%;
+  width: auto;
+  padding: 7px;
+  color: transparent;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.6s ease;
+  cursor: pointer;
+  user-select: none;
+  z-index: 99;
+  padding-bottom: 10px;
 }
-:where(.prev,.next) button{
-    border-radius: 20%;
+:where(.prev, .next) button {
+  border-radius: 20%;
 }
-
 
 .prev {
-    left: 25%;
+  left: 25%;
 }
 
 .next {
-    right: 25%;
+  right: 25%;
 }
 
 .prev button,
 .next button {
-    background-color: #0e2337;
-    color: #ed7a23;
-    border: none;
-    padding: 5px 10px;
-    font-size: 16px;
-    cursor: pointer;
+  background-color: #0e2337;
+  color: #ed7a23;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .prev button:hover,
 .next button:hover {
-    background-color: #ed7a23;
-    color: #0e2337;
+  background-color: #ed7a23;
+  color: #0e2337;
 }
 
-.second-sec h1{
-    text-align: center;
-    font-size: 3rem;
-    color: #0e2337;
+.second-sec h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #0e2337;
 }
-.ListLogosDiv{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: absolute;
-    left: 0;
-    /* background-color: #ffffff; */
-    backdrop-filter: saturate(50%);
-    margin: 0;
+.ListLogosDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0;
+  /* background-color: #ffffff; */
+  backdrop-filter: saturate(50%);
+  margin: 0;
 }
-.ListLogosImg{
-    margin:20px;
-    border-radius: 50%;
-    width: 150px;
-    border: 3.5px solid #ffffff;
-    mix-blend-mode: multiply;
-    /* opacity: 0.8; */
+.ListLogosImg {
+  margin: 20px;
+  border-radius: 50%;
+  width: 150px;
+  border: 3.5px solid #ffffff;
+  /* mix-blend-mode: ; */
+  /* opacity: 0.8; */
 }
